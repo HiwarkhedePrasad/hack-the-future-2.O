@@ -1,0 +1,49 @@
+{
+  "name": "mediping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test-call": "node test-call.js",
+    "test-messagebird": "node test-messagebird-connection.js",
+    "test-tts": "node test-tts.js",
+    "test-local-tts": "node test-local-tts.js",
+    "setup-tts": "cd tts && python setup.py",
+    "test-voice": "node test-voice-system.js",
+    "install-voice-deps": "node test-voice-system.js --install-deps",
+    "start-voice-system": "node test-voice-system.js --start-system",
+    "setup-voice": "cd voice && python -m pip install -r requirements.txt",
+    "demo-voice": "node demo-voice-system.js",
+    "demo-voice-real-gsm": "node demo-voice-system.js --real-gsm --gsm-port COM3",
+    "enhanced-demo": "node enhanced-demo-voice.js",
+    "whisper-demo": "node whisper-demo.js",
+    "improved-demo": "node improved-demo.js",
+    "vapi-demo": "node vapi-demo.js",
+    "vapi-web": "node vapi-simple-server.js",
+    "vapi-web-advanced": "node vapi-web-server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@google/genai": "^1.14.0",
+    "@google/generative-ai": "^0.24.1",
+    "@supabase/supabase-js": "^2.39.0",
+    "axios": "^1.11.0",
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "messagebird": "^3.8.1",
+    "node-cron": "^4.2.1",
+    "twilio": "^5.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

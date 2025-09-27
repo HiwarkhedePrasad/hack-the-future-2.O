@@ -1,0 +1,17 @@
+# Environment Variables Template
+# Copy this file to .env and fill in your actual values
+
+# Supabase Configuration
+SUPABASE_URL=https://your-project-ref.supabase.co
+SUPABASE_ANON_KEY=your_supabase_anon_key
+
+# Twilio Configuration
+TWILIO_ACCOUNT_SID=your_twilio_account_sid
+TWILIO_AUTH_TOKEN=your_twilio_auth_token
+TWILIO_WHATSAPP_NUMBER=whatsapp:+14155238886
+
+# Google AI Configuration
+GOOGLE_AI_API_KEY=your_google_ai_api_key
+
+# Environment
+NODE_ENV=development
